@@ -16,14 +16,14 @@ OOPS is a programming paradigm used to **_organize_** code into **_reusable_**, 
 
 ### Examples
 
-![alt text](img/img1.png)
----
+## ![alt text](img/img1.png)
+
 ## 🧬 Inheritance:
 
 It's a concept where a class inhert the properties or Methods of a parent class and Reuse it.
 
-![alt text](img/inheritance1.png)
----
+## ![alt text](img/inheritance1.png)
+
 | Language | Single Inheritance | Multilevel Inheritance | Multiple Inheritance                                                                        |
 | -------- | ------------------ | ---------------------- | ------------------------------------------------------------------------------------------- |
 | C++      | ✅ Yes             | ✅ Yes                 | ✅ Yes (e.g., class C : public A, public B)                                                 |
@@ -33,15 +33,48 @@ It's a concept where a class inhert the properties or Methods of a parent class 
 ![alt text](img/img2.png)
 
 ---
+
 ## 🔒 Encapsulation
----
+
 Hide the Sensetive data from user.
 
 **Access Modifiers:**
-| Language | Access Modifiers | 
-| -------- | ------------------ | 
-| C++      | public, private, protected | 
-| C#       | public, private, protected, internal |
-| Java     | public, private, protected, default |
+| Language | Access Modifiers |
+| -------- | ------------------ |
+| C++ | public, private, protected |
+| C# | public, private, protected, internal |
+| Java | public, private, protected, default |
 
-![alt text](img/img3.png)
+
+| C++    |   C#   | Java |
+| ----------|---------|--------- |
+
+## ![alt text](img/img3.png)
+
+## 🎭 Polymorphism
+
+It means many froms, It occure when multiple classes related to eaach other using inheritance.
+
+**Compile time polymorphism:** it's resolved while compilation of code.
+
+- **_Method overloading:_**
+when method name is same but parameters are different.
+
+| C++    |   C#   | Java |
+| ----------|---------|--------- |
+
+![alt text](img/img4.png)
+- **_Operator overloading:_** it's gives the ability to use operators to do various operation.
+
+| C++    |   C#   | Java |
+| ---------- | ---------|--------- |
+
+![alt text](img/img5.png)
+**Run time polymorphism:** It's resloved on runtime.
+
+- **_Method overriding:_** when a subclass have a implemention of a method which is already defined in parent class.
+
+| C++    |   C#   | Java |
+| ---------- | ---------|--------- |
+
+![alt text](img/img6.png)
