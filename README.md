@@ -16,13 +16,13 @@ OOPS is a programming paradigm used to **_organize_** code into **_reusable_**, 
 
 ### Examples
 
-![alt text](img\img1.png)
+![alt text](img/img1.png)
 ---
 ## 🧬 Inheritance:
 
 It's a concept where a class inhert the properties or Methods of a parent class and Reuse it.
 
-![alt text](img\inheritance1.png)
+![alt text](img/inheritance1.png)
 ---
 | Language | Single Inheritance | Multilevel Inheritance | Multiple Inheritance                                                                        |
 | -------- | ------------------ | ---------------------- | ------------------------------------------------------------------------------------------- |
@@ -30,7 +30,7 @@ It's a concept where a class inhert the properties or Methods of a parent class 
 | C#       | ✅ Yes             | ✅ Yes                 | ❌ No (A class can only inherit from one base class. It can implement multiple interfaces.) |
 | Java     | ✅ Yes             | ✅ Yes                 | ❌ No (A class can only extend one base class. It can implements multiple interfaces.)      |
 
-![alt text](img\img2.png)
+![alt text](img/img2.png)
 
 ---
 ## 🔒 Encapsulation
@@ -44,4 +44,4 @@ Hide the Sensetive data from user.
 | C#       | public, private, protected, internal |
 | Java     | public, private, protected, default |
 
-![alt text](img\img3.png)
+![alt text](img/img3.png)
