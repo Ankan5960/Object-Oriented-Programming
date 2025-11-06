@@ -1,26 +1,39 @@
 public class test {
-class Car {
-    public void drive() {
-        System.out.println("Car is driving normally at 60 km/h");
+// Abstract class
+abstract class Car {
+    abstract void start();
+    abstract void stop();
+
+    void fuelStatus() {
+        System.out.println("Fuel level is good");
     }
 }
 
-class SportsCar extends Car {
-    // @Override ensures we are correctly replacing the parent method
-    @Override
-    public void drive() {
-        System.out.println("SportsCar is driving FAST at 200 km/h!");
+// Interface
+interface CarFeatures {
+    void playMusic();
+}
+
+// Derived class implementing both
+class Tesla extends Car implements CarFeatures {
+    void start() {
+        System.out.println("Tesla started silently.");
+    }
+    void stop() {
+        System.out.println("Tesla stopped.");
+    }
+    public void playMusic() {
+        System.out.println("Playing music...");
     }
 }
 
-// File: Program.java
-class Program {
+class Main {
     public static void main(String[] args) {
-        // Base class variable holding a derived object
-        Car myVehicle = new SportsCar();
-        
-        // Calls the overridden SportsCar version
-        myVehicle.drive();
+        Car myCar = new Tesla();
+        myCar.start();
+        myCar.fuelStatus();
+        ((Tesla)myCar).playMusic();
+        myCar.stop();
     }
 }
 }

@@ -1,25 +1,37 @@
-using System;
+// Abstract class
+abstract class Car {
+    public abstract void Start();  // abstract method
+    public abstract void Stop();
 
-class Car {
-    // 'virtual' allows this method to be overridden
-    public virtual void Drive() {
-        Console.WriteLine("Car is driving normally at 60 km/h");
+    public void FuelStatus() {     // normal method
+        Console.WriteLine("Fuel level is good");
     }
 }
 
-class SportsCar : Car {
-    // 'override' is REQUIRED to change the behavior
-    public override void Drive() {
-        Console.WriteLine("SportsCar is driving FAST at 200 km/h!");
+// Interface
+interface ICarFeatures {
+    void PlayMusic();
+}
+
+// Derived class implementing both
+class Tesla : Car, ICarFeatures {
+    public override void Start() {
+        Console.WriteLine("Tesla started silently.");
+    }
+    public override void Stop() {
+        Console.WriteLine("Tesla stopped.");
+    }
+    public void PlayMusic() {
+        Console.WriteLine("Playing music...");
     }
 }
 
 class Program {
     static void Main() {
-        // Base class variable holding a derived object
-        Car myVehicle = new SportsCar();
-        
-        // Calls the overridden SportsCar version
-        myVehicle.Drive(); 
+        Tesla t = new Tesla();
+        t.Start();
+        t.FuelStatus();
+        t.PlayMusic();
+        t.Stop();
     }
 }

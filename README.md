@@ -22,7 +22,7 @@ OOPS is a programming paradigm used to **_organize_** code into **_reusable_**, 
 
 It's a concept where a class inhert the properties or Methods of a parent class and Reuse it.
 
-## ![alt text](img/inheritance1.png)
+## ![alt text](img/inheritance.png)
 
 | Language | Single Inheritance | Multilevel Inheritance | Multiple Inheritance                                                                        |
 | -------- | ------------------ | ---------------------- | ------------------------------------------------------------------------------------------- |
@@ -78,3 +78,20 @@ when method name is same but parameters are different.
 | ---------- | ---------|--------- |
 
 ![alt text](img/img6.png)
+
+## 🧠 Abstraction
+The process of hiding certain details and show essential information.
+
+**Abstruct Class:**
+- A class that cannot be instantiated.
+- Can have both abstract methods (without body) and concrete methods (with body).
+- Used when multiple subclasses share common code but must implement some specific behaviors.
+- **Abstract Method:** A method declared without implementation. Must be overridden in derived classes.
+
+**Interface:**
+- A pure abstraction — contains only Abstract method declarations, no implementations.
+
+| C++    |   C#   | Java |
+| ---------- | ---------|--------- |
+
+![alt text](img/img7.png)
